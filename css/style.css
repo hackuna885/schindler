@@ -1,0 +1,64 @@
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%; }
+
+.fondo {
+  background: #141726 url(../img/bg.jpg);
+  background-size: cover;
+  position: relative; }
+
+.bg-primary {
+  background-color: #E30016 !important; }
+
+.text-primary {
+  color: #E30016 !important; }
+
+.btn-primary {
+  color: #FFFFFF;
+  background-color: #E30016 !important;
+  border-color: #C40014 !important; }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #FFFFFF;
+  background-color: #C40014 !important;
+  border-color: #C40014 !important; }
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none !important; }
+
+.border-primary {
+  border-color: #E30016 !important; }
+
+input[type=text].formTransparente,
+input[type=email].formTransparente,
+input[type=password].formTransparente {
+  color: #FFF !important;
+  background-color: rgba(0, 0, 0, 0.2) !important; }
+
+/*#######################
+CENTRADO
+#######################*/
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; }
+
+.form {
+  width: 450px; }
+
+.card {
+  background-color: rgba(0, 0, 0, 0.1) !important; }
+
+/*# sourceMappingURL=style.css.map */

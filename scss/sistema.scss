@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+$rojo: #E30016;
+$rojoDos:#C40014;
+
+.bg-primary{
+    background-color: $rojo !important;
+}
+
+.text-primary {
+    color: $rojo !important;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: $rojo !important;
+    border-color: $rojoDos !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #FFFFFF;
+    background-color: $rojoDos !important;
+    border-color: $rojoDos !important;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none !important;
+}
+
+.border-primary{
+    border-color: $rojo !important;
+}
