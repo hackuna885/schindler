@@ -19,9 +19,6 @@
                                 <form action="insertar/insertar.app" method="POST" id="formulario">
                                 	<input type="text" class="form-control my-3 border-primary formTransparente"  name="txtNombre" placeholder="Nombre de Usuario" required/>
                                 	<select name="optArea" id="" class="form-control my-3" required>
-                                		<option value="">----------------</option>
-                                		<option value="S/N" selected>Área o Depto</option>
-                                		<option value="">----------------</option>
                                 		<option v-for="area of areas" :value="area">{{area}}</option>
                                 	</select>
                                 	<select name="optUsr" id="" class="form-control my-3" required>
