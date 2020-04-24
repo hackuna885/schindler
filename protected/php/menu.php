@@ -174,9 +174,9 @@ $con -> close();
 			    	labels: ['Riesgos'],
 			        datasets: [
 
-			        { label: 'Abierto', data: [<?php echo $cuantosAbiertos; ?>,0], backgroundColor: ['rgba(255,53,72,0.1)'],borderColor: ['rgba(255,53,72,1)'], borderWidth: 1},
-			        { label: 'Cerrado', data: [<?php echo $cuantosCerrados; ?>,0], backgroundColor: ['rgba(1,200,81,0.1)'],borderColor: ['rgba(1,200,81,1)'], borderWidth: 1},
-			        { label: 'En Atención', data: [<?php echo $cuantosEnAten; ?>,0], backgroundColor: ['rgba(255,187,52,0.1)'],borderColor: ['rgba(255,187,52,1)'], borderWidth: 1},
+			        { label: 'Abierto', data: [<?php echo $cuantosAbiertos; ?>,0], backgroundColor: ['rgba(255,53,72,0.9)'],borderColor: ['rgba(255,53,72,1)'], borderWidth: 1},
+			        { label: 'Cerrado', data: [<?php echo $cuantosCerrados; ?>,0], backgroundColor: ['rgba(1,200,81,0.9)'],borderColor: ['rgba(1,200,81,1)'], borderWidth: 1},
+			        { label: 'En Atención', data: [<?php echo $cuantosEnAten; ?>,0], backgroundColor: ['rgba(255,187,52,0.9)'],borderColor: ['rgba(255,187,52,1)'], borderWidth: 1},
 
 			        ]
 			    }
@@ -190,10 +190,10 @@ $con -> close();
 			    	labels: ['Nivel de Riesgo'],
 			        datasets: [
 
-			        { label: 'Bajo', data: [<?php echo $cuantosBajo; ?>,0], backgroundColor: ['rgba(1,200,81,0.1)'],borderColor: ['rgba(1,200,81,1)'], borderWidth: 1},
-			        { label: 'Moderado', data: [<?php echo $cuantosMedio; ?>,0], backgroundColor: ['rgba(255,255,0,0.1)'],borderColor: ['rgba(255,255,0,1)'], borderWidth: 1},
-			        { label: 'Alto', data: [<?php echo $cuantosAlto; ?>,0], backgroundColor: ['rgba(255,187,52,0.1)'],borderColor: ['rgba(255,187,52,1)'], borderWidth: 1},
-			        { label: 'Critico', data: [<?php echo $cuantosCritico; ?>,0], backgroundColor: ['rgba(255,53,72,0.1)'],borderColor: ['rgba(255,53,72,1)'], borderWidth: 1},
+			        { label: 'Bajo', data: [<?php echo $cuantosBajo; ?>,0], backgroundColor: ['rgba(1,200,81,0.9)'],borderColor: ['rgba(1,200,81,1)'], borderWidth: 1},
+			        { label: 'Moderado', data: [<?php echo $cuantosMedio; ?>,0], backgroundColor: ['rgba(255,255,0,0.9)'],borderColor: ['rgba(255,255,0,1)'], borderWidth: 1},
+			        { label: 'Alto', data: [<?php echo $cuantosAlto; ?>,0], backgroundColor: ['rgba(255,187,52,0.9)'],borderColor: ['rgba(255,187,52,1)'], borderWidth: 1},
+			        { label: 'Critico', data: [<?php echo $cuantosCritico; ?>,0], backgroundColor: ['rgba(255,53,72,0.9)'],borderColor: ['rgba(255,53,72,1)'], borderWidth: 1},
 
 			        ]
 			    }
