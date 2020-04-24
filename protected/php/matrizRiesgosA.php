@@ -182,72 +182,9 @@ include 'seguridad.php';
 											}
 
 											 ?>
-
-
-											<!-- <h5 class="card-title">Area:</h5>
-											<h6 class="ml-1">Proceso:</h6>
-											<div class="list-group-item mx-2 mb-3 p-0 overflow-auto ">
-												<div class="" style="font-size: .7em;">
-														<table class="">
-															<thead class="text-white bg-secondary">
-																<tr>
-																	<th class="p-2" style="width: 200px;">Procedimiento</th>
-																	<th class="p-2" style="width: 300px;">Descripción del Riesgo</th>
-																	<th class="p-2" style="width: 200px;">Factor de Riesgo</th>
-																	<th class="p-2" style="width: 200px;">Causa o Raíz</th>
-																	<th class="p-2" style="width: 150px;">Consecuencia</th>
-																	<th class="p-2" style="width: 150px;">Probabilidad</th>
-																	<th class="p-2" style="width: 150px;">Impacto</th>
-																	<th class="p-2" style="width: 150px;">Calificación del Riesgo</th>
-																	<th class="p-2" style="width: 100px;">Estatus</th>
-																	<th class="p-2" style="width: 300px;">Fecha de Identificación del Riesgo</th>
-																	<th class="p-2" style="width: 300px;">Nombre del Responsable de Atención del Riesgo</th>
-																	<th class="p-2" style="width: 300px;">Acciones de Mitigación</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																	<td class="p-2"></td>
-																</tr>
-															</tbody>
-														</table>
-												</div>												
-										    </div> -->
-
 										    
 										</div>
 
-									</div>
-								</div>
-
-								<div class="card mt-5" style="min-height: 500px;">
-									<div class="card-body">
-										
-										<div class="list-group">
-											<h5 class="card-title">Gráficas</h5>
-											<div class="list-group-item mx-2 mb-3 p-0">
-												<div class="row">
-													<div class="col-md-6 mx-auto">
-														<canvas id="gProcesos" height="250px;"></canvas>
-													</div>
-													<div class="col-md-6 mx-auto">
-														<canvas id="gNivelRiesgo" height="250px;"></canvas>
-													</div>
-												</div>
-												
-											</div>
-										</div>
 									</div>
 								</div>
 
@@ -272,42 +209,6 @@ include 'seguridad.php';
 		<script src="../js/vue.js"></script>
 		<script src="../js/axios.min.js"></script>
 		<script src="../js/sweetalert2.min.js"></script>
-		<script src="../js/chart.js"></script>
-		<!-- <script src="assets/causas.js"></script> -->
-
-		<script>
-			var ctx = document.getElementById('gProcesos').getContext('2d');
-			var chart = new Chart(ctx, {
-			    type: 'bar',
-			    data: {
-			    	labels: ['Riesgos'],
-			        datasets: [
-
-			        { label: 'Abierto', data: [2,0], backgroundColor: ['rgb(255,53,72)'] },
-			        { label: 'Cerrado', data: [0,0], backgroundColor: ['rgb(1,200,81)'] },
-			        { label: 'En Atención', data: [0,0], backgroundColor: ['rgb(255,187,52)'] },
-
-			        ]
-			    }
-			});
-
-			var ctx = document.getElementById('gNivelRiesgo').getContext('2d');
-			var chart = new Chart(ctx, {
-
-			    type: 'bar',
-			    data: {
-			    	labels: ['Nivel de Riesgo'],
-			        datasets: [
-
-			        { label: 'Bajo', data: [2,0], backgroundColor: ['rgb(1,200,81)'] },
-			        { label: 'Moderado', data: [0,0], backgroundColor: ['rgb(255,255,0)'] },
-			        { label: 'Alto', data: [1,0], backgroundColor: ['rgb(255,187,52)'] },
-			        { label: 'Critico', data: [1,0], backgroundColor: ['rgb(255,53,72)'] },
-
-			        ]
-			    }
-			});
-		</script>
  	
  </body>
  </html>
