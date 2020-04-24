@@ -135,29 +135,40 @@ $con -> close();
 
 						</div>
 					</div>
-								<div class="row">
-									<div class="col-12">
-										<div class="card" style="min-height: 500px;">
-											<div class="card-body">
-												
-												<div class="list-group">
-													<h5 class="card-title">Gráficas</h5>
-													<div class="list-group-item mx-2 mb-3 p-0">
-														<div class="row">
-															<div class="col-md-6 mx-auto my-3">
-																<canvas id="gRiesgos" height="250px;"></canvas>
-															</div>
-															<div class="col-md-6 mx-auto my-3">
-																<canvas id="gNivelRiesgo" height="250px;"></canvas>
-															</div>
-														</div>
-														
+
+					<?php
+
+					if ($tipoUsuario === '1') {
+						echo '
+
+						<div class="row">
+							<div class="col-12">
+								<div class="card" style="min-height: 500px;">
+									<div class="card-body">
+										<div class="list-group">
+											<h5 class="card-title">Gráficas</h5>
+											<div class="list-group-item mx-2 mb-3 p-0">
+												<div class="row">
+													<div class="col-md-6 mx-auto my-3">
+														<canvas id="gRiesgos" height="250px;"></canvas>
+													</div>
+													<div class="col-md-6 mx-auto my-3">
+														<canvas id="gNivelRiesgo" height="250px;"></canvas>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+						
+						
+						';
+					}
+					
+					?>
+								
 				</div>
 			</div>
 		</div>
