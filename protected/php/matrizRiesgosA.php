@@ -18,6 +18,9 @@ include 'seguridad.php';
  			background-color: #FFFF00;
 		    color: #000;
  		}
+		td{
+			border: 1px solid #E5E5E5;
+		}
  	</style>
  </head>
  <body style="background-color: #E5E5E5;">
@@ -228,6 +231,26 @@ include 'seguridad.php';
 									</div>
 								</div>
 
+								<div class="card mt-5" style="min-height: 500px;">
+									<div class="card-body">
+										
+										<div class="list-group">
+											<h5 class="card-title">Gráficas</h5>
+											<div class="list-group-item mx-2 mb-3 p-0">
+												<div class="row">
+													<div class="col-md-6 mx-auto">
+														<canvas id="gProcesos" height="250px;"></canvas>
+													</div>
+													<div class="col-md-6 mx-auto">
+														<canvas id="gNivelRiesgo" height="250px;"></canvas>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+
 
 							</div>
 
@@ -249,7 +272,42 @@ include 'seguridad.php';
 		<script src="../js/vue.js"></script>
 		<script src="../js/axios.min.js"></script>
 		<script src="../js/sweetalert2.min.js"></script>
+		<script src="../js/chart.js"></script>
 		<!-- <script src="assets/causas.js"></script> -->
+
+		<script>
+			var ctx = document.getElementById('gProcesos').getContext('2d');
+			var chart = new Chart(ctx, {
+			    type: 'bar',
+			    data: {
+			    	labels: ['Riesgos'],
+			        datasets: [
+
+			        { label: 'Abierto', data: [2,0], backgroundColor: ['rgb(255,53,72)'] },
+			        { label: 'Cerrado', data: [0,0], backgroundColor: ['rgb(1,200,81)'] },
+			        { label: 'En Atención', data: [0,0], backgroundColor: ['rgb(255,187,52)'] },
+
+			        ]
+			    }
+			});
+
+			var ctx = document.getElementById('gNivelRiesgo').getContext('2d');
+			var chart = new Chart(ctx, {
+
+			    type: 'bar',
+			    data: {
+			    	labels: ['Nivel de Riesgo'],
+			        datasets: [
+
+			        { label: 'Bajo', data: [2,0], backgroundColor: ['rgb(1,200,81)'] },
+			        { label: 'Moderado', data: [0,0], backgroundColor: ['rgb(255,255,0)'] },
+			        { label: 'Alto', data: [1,0], backgroundColor: ['rgb(255,187,52)'] },
+			        { label: 'Critico', data: [1,0], backgroundColor: ['rgb(255,53,72)'] },
+
+			        ]
+			    }
+			});
+		</script>
  	
  </body>
  </html>
